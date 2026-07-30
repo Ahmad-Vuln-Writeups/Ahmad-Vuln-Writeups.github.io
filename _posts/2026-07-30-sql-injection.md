@@ -51,14 +51,6 @@ https://redacted.com/products?category_id=15+AND+SLEEP(20)--
 
 The response took a little over 20 seconds to come back. 
 
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html; charset=UTF-8
-X-Response-Time: 20.014s
-
-[... Page Content ...]
-```
-
 I ran it again with a baseline request (`category_id=15` with no injection) right after, just to rule out server load or a fluke — that one came back instantly, like normal. Then I tried the payload a second time to be sure it wasn't a coincidence. Same result: **~20 seconds, every time.**
 
 That was enough to confirm it. The application was passing the `category_id` value straight into a SQL query without sanitizing or parameterizing it, and the database was executing whatever logic I appended.
