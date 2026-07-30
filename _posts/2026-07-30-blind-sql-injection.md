@@ -24,7 +24,7 @@ The page didn't throw a visible SQL error, which normally means one of two thing
 Since there was no visible feedback, I went with a time-based approach. If the parameter was actually vulnerable, I could get the database to confirm it indirectly — by making it pause before responding.
 
 I sent this:
-https://redacted.com/products?category_id=15
+`https://redacted.com/products?category_id=15`
 
 Nothing unusual about that on its own. Plenty of apps do this safely. But something about the way the page behaved when I changed the value — a slightly inconsistent error page when I sent a non-numeric value — made me want to poke at it a little more.
 
@@ -32,7 +32,7 @@ Nothing unusual about that on its own. Plenty of apps do this safely. But someth
 
 I tried the classic single-quote test:
 
-https://redacted.com/products?category_id=15'
+`https://redacted.com/products?category_id=15'`
 
 The page didn't throw a visible SQL error, which normally means one of two things: either the input is being handled safely, or the errors are just suppressed and hidden from the response. Given how the app reacted differently to malformed input versus normal input, I leaned toward the second option and decided to test for blind injection instead of giving up.
 
@@ -42,7 +42,7 @@ Since there was no visible feedback, I went with a time-based approach. If the p
 
 I sent this:
 
-https://redacted.com/products?category_id=15 AND SLEEP(20)--
+`https://redacted.com/products?category_id=15 AND SLEEP(20)--`
 
 The response took a little over 20 seconds to come back.
 
@@ -74,5 +74,3 @@ The team acknowledged it quickly and patched it within their SLA. No data was ex
 ## Takeaway
 
 This one's a good reminder that you don't always need a verbose error message to find SQLi. If a parameter feels off, even subtly, response timing is one of the most reliable signals you have. `SLEEP()` payloads are simple, but they're simple because they work.
-
-
