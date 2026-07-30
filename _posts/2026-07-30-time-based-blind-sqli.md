@@ -1,7 +1,6 @@
 ---
 title: "Time-Based Blind SQL Injection in REDACTED.com — A 20-Second Wait That Told Me Everything"
 date: 2026-07-30 06:14:00 +0000
-categories: [Bug Bounty, Web Security]
 tags: [sqli, blind-sqli, web-security, writeup]
 image:
   path: /assets/img/posts/sqli-banner.jpg # Optional: Add a path to a banner image here later
