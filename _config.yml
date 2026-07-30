@@ -9,7 +9,7 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
-timezone: Asia/Riyadh
+timezone: https://zones.arilyn.cc
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -236,5 +236,5 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-   html_proofer: false
+html_proofer: false
 
