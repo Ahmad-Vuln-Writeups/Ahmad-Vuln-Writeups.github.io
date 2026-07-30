@@ -26,4 +26,3 @@ This isn't a place for hype or clickbait CVE announcements. If a bug is interest
 If you're just getting into bug bounty or web security in general, I hope something here saves you a few hours of confusion. 
 
 > **Got feedback?** If you spot a mistake in one of my write-ups or think I explained something poorly, please tell me — I'd genuinely rather fix it than leave it wrong.
-{: .prompt-info }
