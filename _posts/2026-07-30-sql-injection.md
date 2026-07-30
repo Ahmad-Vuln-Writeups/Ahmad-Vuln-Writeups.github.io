@@ -1,6 +1,6 @@
 ---
 title: "Time-Based Blind SQL Injection"
-date: 2026-07-30 11:03:00 +0300
+date: 2026-07-30 11:00:00 +0300
 categories: [Vulnerabilities, Web]
 tags: [sqli, blind-sqli, bug-bounty]
 ---
