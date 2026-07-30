@@ -1,6 +1,6 @@
 ---
 title: "Time-Based Blind SQL Injection in REDACTED.com — A 20-Second Wait That Told Me Everything"
-date: 2026-07-30 07:10:00 +0000
+date: 2026-07-30 07:05:28 +0000
 ---
 
 A write-up on finding and confirming a blind SQL injection vulnerability through simple response-time analysis.
