@@ -1,5 +1,3 @@
-yaml
-
 ---
 title: "Time-Based Blind SQL Injection in REDACTED.com — A 20-Second Wait That Told Me Everything"
 date: 2026-07-30 09:00:00 +0000
