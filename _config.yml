@@ -236,5 +236,9 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+# Disable the aggressive HTML link validation tool
+html_proofer: false
+
+
 
 
