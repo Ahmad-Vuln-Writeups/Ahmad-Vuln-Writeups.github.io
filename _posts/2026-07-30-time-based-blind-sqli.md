@@ -46,7 +46,7 @@ Since there was no visible feedback, I went with a time-based approach. If the p
 I sent this payload:
 
 ```url
-https://redacted.com/products?category_id=15+AND+SLEEP(20)--
+https://redacted.com/products?category_id=15+AND+`SLEEP()`--
 ```
 
 The response took a little over 20 seconds to come back. 
