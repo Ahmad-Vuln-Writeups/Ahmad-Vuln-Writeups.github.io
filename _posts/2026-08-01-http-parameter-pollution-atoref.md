@@ -1,6 +1,6 @@
 ---
 title: "One Extra Parameter Was All It Took to Redirect a Password Reset on REDACTED.com"
-date: 2026-08-01 12:30:00 +0300
+date: 2026-08-01 10:30:00 +0300
 categories: [Bug Bounty, Web Security]
 tags: [hpp, parameter-pollution, account-takeover, api-security, writeup]
 ---
